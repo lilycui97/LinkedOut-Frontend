@@ -28,7 +28,7 @@ function uploadResume()
      var apigClient = apigClientFactory.newClient();
 
      var body = data;
-     var params = {"key" : file.name, "bucket" : "photoboy", "Content-Type" : file.type};
+     var params = {"key" : file.name, "bucket" : "linkedout-resumestore", "Content-Type" : file.type};
      var additionalParams = {};
      apigClient.postresumeFolderFilePut(params, body , additionalParams).then(function(res){
        if (res.status == 200)

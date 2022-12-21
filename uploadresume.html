@@ -6,28 +6,17 @@
   <script src="main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  
 </head>
 <body>
-<ul>
-  <li><a href="#home"><img src="linkedoutlogo.JPG"></a></li>
-  <li><a href="#login">Log out</a></li>
-</ul>
 
-
-<h2>Applied Jobs</h2>
-  <div>
-    <!-- get previously applied jobs here somehow -->
-  </div>
-<h2>Previous Recommendations</h2>
-  <div>
-    <!-- get previously recommended jobs here somehow -->
-
-  </div>
-<h2>New Recommendations</h2>
-  <div>
-    <!-- get new jobs here somehow -->
-
-  </div>
+<h2>Get Matched Now</h2>
+<h1>Upload Your Resume</h1>
+<div class="input-group" style="margin-top:30px;">
+    <input type="file" class="form-control upload" name="search" id="file_path">
+    <div class="input-group-btn">
+        <button class="btn btn-default" type="submit" onclick="uploadResume()">Upload</button>
+    </div>
+</div>
 </body>
 </html>
